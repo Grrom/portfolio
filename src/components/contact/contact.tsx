@@ -29,7 +29,7 @@ export default function Contact() {
     ]
 
     return (
-        <main className="contact">
+        <main id="contact">
             <span className="title">
                 Contact me
             </span>
@@ -37,7 +37,7 @@ export default function Contact() {
             <div className="contact-list">
                 {
                     contactList.map(item => {
-                        return <ContactItem site={item.site} link={item.link} icon={item.icon} />
+                        return <ContactItem site={item.site} link={item.link} icon={item.icon} key={item.site} />
                     })
                 }
             </div>

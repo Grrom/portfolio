@@ -1,7 +1,7 @@
 @import "../../global_styles/extension";
 @import "../../global_styles/variables";
 
-.featured-projects{
+#featured-projects{
     background-color: $primaryLighter;
 
     @extend .spacing;

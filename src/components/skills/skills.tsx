@@ -33,7 +33,7 @@ export default function Skills() {
     }
 
     return (
-        <main className="skills">
+        <main id="skills">
             <div className="title">
                 Skills
             </div>

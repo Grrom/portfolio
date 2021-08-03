@@ -2,7 +2,7 @@ import "./about.scss"
 
 export default function About() {
     return (
-        <main className="about">
+        <main id="about">
             <span className="title">
                 About Me
             </span>

@@ -18,7 +18,7 @@ export default function FeaturedProjects() {
     ]
 
     return (
-        <main className="featured-projects">
+        <main id="featured-projects">
             <span className="title">
                 Featured Projects
             </span>

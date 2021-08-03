@@ -19,7 +19,7 @@
 
 .spacing{
     @include mobile{
-        padding: 1em;
+        padding: 4em 1em;
     }
 
     @include desktop{
@@ -31,4 +31,13 @@
 
 .rounded-border{
     border-radius: 12px;
+}
+
+.not-link{
+    text-decoration: none;
+    color: $fontColor;
+}
+
+.hover-pointer:hover{
+    cursor: pointer;
 }

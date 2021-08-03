@@ -2,7 +2,7 @@ import "./hero.scss"
 
 export default function Hero() {
     return (
-        <main className="hero">
+        <main id="hero">
             <span className="hello">
                 Hello I'm JEROME
             </span>
