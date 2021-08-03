@@ -1,3 +1,39 @@
-main {
+
+@import "../../global_styles/variables";
+@import "../../global_styles/extension";
+@import "../../global_styles/fonts";
+
+.navbar {
+    padding: 1em;
     display: flex;
+    justify-content: space-between;
+
+    @extend .font-inter;
+
+    .item-list{
+        @extend .centered-row;
+
+        .navbar-item{
+            margin: 1em;
+        }
+    }
+
+    .my-logo{
+        @extend .centered-row;
+
+        .logo-text{
+            font-weight: 900;
+            font-size: 1.5em;
+        }
+
+
+        .logo{
+            margin: 0 1em;
+            max-width: 20x;
+            height: 40px;
+        }
+
+    }
+
+
 }

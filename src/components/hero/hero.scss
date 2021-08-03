@@ -1,0 +1,18 @@
+
+@import "../../global_styles/variables";
+@import "../../global_styles/extension";
+
+.hero{
+    text-align: center;
+    padding: 15vw;
+
+    .hello{
+        @extend .font-inter;
+        font-size: 3em;
+    }
+
+    .what-i-am{
+        font-size: 2em;
+        font-weight: 200;
+    }
+}

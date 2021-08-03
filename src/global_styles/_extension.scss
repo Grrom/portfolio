@@ -1,0 +1,34 @@
+@import "fonts";
+@import "mixins";
+
+.centered-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.font-inter{
+    font-family: "Inter";
+}
+
+.title{
+    margin: .5em;
+    font-size: 2em;
+    @extend .font-inter;
+}
+
+.spacing{
+    @include mobile{
+        padding: 1em;
+    }
+
+    @include desktop{
+        padding: 4em;
+    }
+
+    text-align: center;
+}
+
+.rounded-border{
+    border-radius: 12px;
+}

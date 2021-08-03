@@ -1,0 +1,50 @@
+@import "../../global_styles/extension";
+@import "../../global_styles/variables";
+
+.featured-projects{
+    background-color: $primaryLighter;
+
+    @extend .spacing;
+
+    .project{
+        @extend .rounded-border;
+
+        background-color: $primary;
+        width: 70vw;
+        margin: 1em auto;
+
+
+        .project-screenshot{
+            @extend .rounded-border;
+            width: 100%;
+        }
+
+        .project-details{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .project-name{
+                font-size: 1.2em
+            }
+
+            .project-description{
+                margin: 1em;
+            }
+
+            .project-link{
+                @extend .rounded-border;
+                @extend .font-inter;
+
+                display: inline-block;
+                width: 20%;
+                padding: .4em;
+                margin: .4em;
+                background-color: #007ae6;
+                text-decoration: none;
+                color: $fontColor;
+            }
+
+        }
+    }
+}

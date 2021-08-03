@@ -1,0 +1,9 @@
+@import "../../global_styles/variables";
+@import "../../global_styles/extension";
+
+.about{
+    background-color: $primaryLight;
+
+    @extend .spacing;
+
+}
