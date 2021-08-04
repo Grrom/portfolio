@@ -1,35 +1,39 @@
-
 @import "../../global_styles/extension";
 @import "../../global_styles/variables";
+@import "../../global_styles/hovers";
 
-#skills{
+#skills {
     @extend .spacing;
 
-    .skill-category{
+    .skill-category {
+        @extend .hover-grow;
+
+        display: inline-block;
         margin-top: 1.5em;
+        padding: 0.4em;
         font-size: 1.5em;
     }
 
-    .skill-list{
-
+    .skill-list {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
 
-        .skill{
+        .skill {
             @extend .centered-row;
             @extend .rounded-border;
+            @extend .hover-shake;
+            @extend .hover-pointer;
 
             background-color: $primaryLighter;
             border: 1px solid $fontColor;
             padding: 8px;
             margin: 8px;
 
-            .skill-logo{
+            .skill-logo {
                 height: 30px;
                 padding-right: 8px;
             }
         }
     }
-
 }

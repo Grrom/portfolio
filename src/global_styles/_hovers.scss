@@ -1,0 +1,51 @@
+@import "animations";
+
+.hover-shake:hover,
+.hover-shake:active {
+  animation: shake 500ms;
+  animation-iteration-count: 1;
+}
+
+.hover-underline:after {
+  content: "";
+  position: relative;
+  left: 0;
+  display: inline-block;
+  min-width: 100%;
+  border-bottom: 1px solid;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+}
+
+.hover-underline:hover:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.hover-grow:hover {
+  transition: 500ms;
+  transform: scale(1.2);
+}
+
+.hover-pointer:hover {
+  cursor: pointer;
+}
+
+.hover-arrow:hover {
+  cursor: default;
+}
+
+.hover-elevate:hover {
+  transform: scale(1.1);
+
+  @extend .active-shrink;
+}
+
+.active-shrink:active {
+  transform: scale(1);
+  box-shadow: 0 0 0 0 #fff;
+}

@@ -2,22 +2,22 @@
 
 @mixin desktop {
     @media (min-width: #{$desktop}) {
-        @content
+        @content;
     }
-};
+}
 
 @mixin mobile {
     @media (max-width: #{$desktop}) {
-        @content
+        @content;
     }
-};
-
-@mixin hover-highlight($highlightColor){
-    &:hover {
-        background-color: $highlightColor;
-       }
 }
 
-@mixin shadow($shadowColor: $black){
-    box-shadow: .1em .1em .2em #{$shadowColor};
+@mixin hover-highlight($highlightColor) {
+    &:hover {
+        background-color: $highlightColor;
+    }
+}
+
+@mixin shadow($shadowColor: $black) {
+    box-shadow: 0.1em 0.1em 0.2em #{$shadowColor};
 }

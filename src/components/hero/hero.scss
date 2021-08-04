@@ -1,17 +1,23 @@
-
 @import "../../global_styles/variables";
 @import "../../global_styles/extension";
+@import "../../global_styles/hovers";
 
-#hero{
+#hero {
     text-align: center;
     padding: 15vw;
 
-    .hello{
+    .hello {
         @extend .font-inter;
+        @extend .hover-underline;
+        @extend .hover-arrow;
+
         font-size: 3em;
     }
 
-    .what-i-am{
+    .what-i-am {
+        @extend .hover-underline;
+        @extend .hover-arrow;
+
         font-size: 2em;
         font-weight: 200;
     }

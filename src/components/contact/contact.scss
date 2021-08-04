@@ -1,22 +1,23 @@
-
 @import "../../global_styles/extension";
+@import "../../global_styles/hovers";
 @import "../../global_styles/variables";
 
-#contact{
+#contact {
     @extend .spacing;
 
-    .contact-list{
+    .contact-list {
         @extend .centered-row;
 
-        .contact-item{
+        .contact-item {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin: 1em;
 
             @extend .not-link;
+            @extend .hover-elevate;
 
-            .contact-icon{
+            .contact-icon {
                 font-size: 2em;
             }
         }

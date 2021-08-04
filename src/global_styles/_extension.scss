@@ -1,43 +1,44 @@
 @import "fonts";
 @import "mixins";
+@import "hovers";
 
-.centered-row{
+.centered-row {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.font-inter{
+.font-inter {
     font-family: "Inter";
 }
 
-.title{
-    margin: .5em;
+.title {
+    display: inline-block;
+    margin: 0.5em;
     font-size: 2em;
+
     @extend .font-inter;
+    @extend .hover-underline;
+    @extend .hover-arrow;
 }
 
-.spacing{
-    @include mobile{
+.spacing {
+    @include mobile {
         padding: 4em 1em;
     }
 
-    @include desktop{
+    @include desktop {
         padding: 4em;
     }
 
     text-align: center;
 }
 
-.rounded-border{
+.rounded-border {
     border-radius: 12px;
 }
 
-.not-link{
+.not-link {
     text-decoration: none;
     color: $fontColor;
-}
-
-.hover-pointer:hover{
-    cursor: pointer;
 }

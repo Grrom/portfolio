@@ -8,6 +8,7 @@ import FeaturedProjects from "./featured_projects/featured_projects";
 import Contact from "./contact/contact";
 
 export default function App() {
+
   return (
     <main className="app">
       <Navbar />

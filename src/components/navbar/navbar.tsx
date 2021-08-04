@@ -62,7 +62,7 @@ function NavbarItem(props: { itemName: String, link: string }) {
     return (
         <Link
             className="navbar-item"
-            activeClass="active"
+            activeClass="active-nav-item"
             to={props.link}
             spy={true}
             smooth={true}

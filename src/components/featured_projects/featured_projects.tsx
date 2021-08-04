@@ -9,7 +9,7 @@ export default function FeaturedProjects() {
         {
             name: "My Music Streamer",
             link: "https://jeromelalunio.github.io/my-music-streamer",
-            description: "It's a Music streamer the I made with react, You can search songs and play them, pretty straightforward"
+            description: "It's a Music streamer that I made with react, You can search songs and play them, pretty straight forward"
         }
     ]
 
