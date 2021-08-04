@@ -20,6 +20,7 @@
             @extend .centered-row;
             @extend .rounded-border;
 
+            background-color: $primaryLighter;
             border: 1px solid $fontColor;
             padding: 8px;
             margin: 8px;

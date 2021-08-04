@@ -1,34 +1,55 @@
 import "./skills.scss"
 
-import logo from "../../assets/logo.png";
+import dartLogo from "../../assets/skills/dart.svg";
+import javaLogo from "../../assets/skills/java.svg";
+import pythonLogo from "../../assets/skills/python.svg";
+import javascriptLogo from "../../assets/skills/javascript.svg";
+import typescriptLogo from "../../assets/skills/typescript.svg";
+import phpLogo from "../../assets/skills/php.svg";
+
+import htmlLogo from "../../assets/skills/html.svg";
+import cssLogo from "../../assets/skills/css.svg";
+import sassLogo from "../../assets/skills/sass.svg";
+import webpackLogo from "../../assets/skills/webpack.svg";
+
+import vueJsLogo from "../../assets/skills/vuejs.svg";
+import reactJsLogo from "../../assets/skills/reactjs.svg";
+import flutterLogo from "../../assets/skills/flutter.svg";
+import bootstrapLogo from "../../assets/skills/bootstrap.svg";
+import tailwindLogo from "../../assets/skills/tailwind.svg";
+import expressLogo from "../../assets/skills/express.svg";
+
+import dockerLogo from "../../assets/skills/docker.svg";
+import githubLogo from "../../assets/skills/github.svg";
+import gitLogo from "../../assets/skills/git.svg";
+import nodeJsLogo from "../../assets/skills/nodejs.svg";
 
 export default function Skills() {
     interface skill {
-        [key: string]: Array<string>
+        [key: string]: Array<{ name: string, icon: any }>
     }
 
     const skillList: skill = {
 
         "Programming Languages": [
-            "Dart", "Java", "Python",
-            "JavaScript", "TypeScript", "Php",
+            { name: "Dart", icon: dartLogo }, { name: "Java", icon: javaLogo }, { name: "Python", icon: pythonLogo },
+            { name: "JavaScript", icon: javascriptLogo }, { name: "Typescript", icon: typescriptLogo }, { name: "Php", icon: phpLogo },
         ],
 
         "Web Dev Specific": [
-            "HTML", "CSS", "SCSS",
-            "SASS", "Webpack",
+            { name: "HTML", icon: htmlLogo }, { name: "CSS", icon: cssLogo }, { name: "SASS / SCSS", icon: sassLogo },
+            { name: "Webpack", icon: webpackLogo }
         ],
 
         "Libraries and Frameworks": [
-            "Flutter", "React JS", "Vue JS",
-            "React Native", "BootStrap", "Tailwind CSS",
-            "Express JS"
+            { name: "Flutter", icon: flutterLogo }, { name: "React JS", icon: reactJsLogo }, { name: "Vue JS", icon: vueJsLogo },
+            { name: "React Native", icon: reactJsLogo }, { name: "BootStrap", icon: bootstrapLogo }, { name: "Tailwind CSS", icon: tailwindLogo },
+            { name: "Express JS", icon: expressLogo }
         ],
 
         "Others": [
-            "Docker", "Github", "Git",
-            "Node JS", "NoSQL", "SQL",
-            "Scripting", "Linux"
+            { name: "Docker", icon: dockerLogo }, { name: "Github", icon: githubLogo }, { name: "Git", icon: gitLogo },
+            { name: "Node JS", icon: nodeJsLogo }, { name: "SQL", icon: "" }, { name: "NoSQL", icon: "" }
         ]
     }
 
@@ -46,7 +67,7 @@ export default function Skills() {
     )
 }
 
-function SkillCategory(props: { category: String, skills: Array<string> }) {
+function SkillCategory(props: { category: String, skills: Array<{ [skill: string]: string }> }) {
     return (
         <div>
             <div className="skill-category">
@@ -54,7 +75,7 @@ function SkillCategory(props: { category: String, skills: Array<string> }) {
             </div>
             <div className="skill-list">
                 {props.skills.map((skill, i) => {
-                    return <Skill skillName={skill} key={skill} />
+                    return <Skill skillName={skill.name} icon={skill.icon} key={skill.name} />
                 })}
             </div>
         </div>
@@ -62,10 +83,10 @@ function SkillCategory(props: { category: String, skills: Array<string> }) {
 
 }
 
-function Skill(props: { skillName: String }) {
+function Skill(props: { skillName: String, icon: string }) {
     return (
         <main className="skill">
-            <img src={logo} alt="logo" className="skill-logo" />
+            <img src={props.icon} alt="" className="skill-logo" />
             <span>{props.skillName}</span>
         </main>
     )
