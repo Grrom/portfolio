@@ -3,24 +3,26 @@ import "./navbar.scss"
 import logo from "../../assets/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineCloseCircle } from "react-icons/ai";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-scroll";
+import { debounce } from "../../helper";
 
 
 export default function Navbar() {
     const [showSidenav, toggleSidenav] = useState(false)
 
-    let prevScrollpos = window.pageYOffset;
-    window.onscroll = () => {
+    const [previousPos, setPreviousPos] = useState(1)
 
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar")!.style.top = "0";
-        } else {
-            document.getElementById("navbar")!.style.top = "-5em";
-        }
-        prevScrollpos = currentScrollPos;
-    }
+    const handleScroll = debounce(() => {
+        const currentPos = window.pageYOffset;
+        document.getElementById('navbar')!.style.top = previousPos! - currentPos > 70 ? '0' : '-5em';
+        setPreviousPos(() => window.pageYOffset);
+    }, 60);
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [previousPos, handleScroll]);
 
     return (
         <main id="navbar">
