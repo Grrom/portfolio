@@ -1,12 +1,8 @@
 import "./featured_projects.scss"
 
 import MyMusicStreamer from "../../assets/my_music_streamer.png"
+import { project } from "../types"
 
-interface project {
-    name: string,
-    link: string,
-    description: string,
-}
 
 export default function FeaturedProjects() {
     const projectList: Array<project> = [

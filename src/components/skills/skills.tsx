@@ -23,11 +23,9 @@ import dockerLogo from "../../assets/skills/docker.svg";
 import githubLogo from "../../assets/skills/github.svg";
 import gitLogo from "../../assets/skills/git.svg";
 import nodeJsLogo from "../../assets/skills/nodejs.svg";
+import { skill } from "../types";
 
 export default function Skills() {
-    interface skill {
-        [key: string]: Array<{ name: string, icon: any }>
-    }
 
     const skillList: skill = {
 

@@ -2,12 +2,8 @@ import "./contact.scss"
 
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
 import { MdEmail, } from 'react-icons/md'
+import { contact } from "../types"
 
-interface contact {
-    site: string,
-    link: string,
-    icon: any,
-}
 
 export default function Contact() {
     const contactList: Array<contact> = [
