@@ -12,3 +12,35 @@
         transform: rotate(0deg);
     }
 }
+
+.fade-slide-up {
+    -webkit-animation: fadeSlideUp 0.6s ease-in-out both;
+    animation: fadeSlideUp 0.6s ease-in-out both;
+}
+
+@keyframes fadeSlideUp {
+    0% {
+        opacity: 0.2;
+        transform: translateY(10%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+.scale-in {
+    -webkit-animation: scaleIn 0.6s ease-in-out both;
+    animation: scaleIn 0.6s ease-in-out both;
+}
+
+@keyframes scaleIn {
+    0% {
+        opacity: 0.2;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

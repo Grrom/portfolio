@@ -1,8 +1,9 @@
 import "./hero.scss"
 
 export default function Hero() {
+
     return (
-        <main id="hero">
+        <main id="hero" in-vp="fade-slide-up">
             <span className="hello">
                 Hello I'm JEROME
             </span>

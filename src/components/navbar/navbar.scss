@@ -12,7 +12,7 @@
     background-color: $primary;
     transition: 200ms;
     top: 0;
-
+    z-index: 1;
     @extend .centered-row;
     @extend .font-inter;
 

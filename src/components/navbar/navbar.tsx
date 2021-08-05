@@ -11,7 +11,7 @@ import { debounce } from "../../helper";
 export default function Navbar() {
     const [showSidenav, toggleSidenav] = useState(false)
 
-    const [previousPos, setPreviousPos] = useState(1)
+    const [previousPos, setPreviousPos] = useState(0)
 
     const handleScroll = debounce(() => {
         const currentPos = window.pageYOffset;
