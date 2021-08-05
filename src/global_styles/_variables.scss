@@ -5,6 +5,11 @@ $primaryLighter: #1e2122;
 $secondary: #007ae6;
 $secondaryLight: lighten($secondary, 20%);
 
+// for the stars
+$bxshadow-large: box-shadow(100);
+$bxshadow-medium: box-shadow(300);
+$bxshadow-small: box-shadow(500);
+
 $fontColor: #f2f2f2;
 
 $desktop: 540px;

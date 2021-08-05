@@ -3,7 +3,13 @@ import "./hero.scss"
 export default function Hero() {
 
     return (
-        <main id="hero" in-vp="fade-slide-up">
+        <main id="hero">
+            <div className="sky">
+                <div className="stars-small"></div>
+                <div className="stars-medium"></div>
+                <div className="stars-large"></div>
+            </div>
+
             <span className="hello">
                 Hello I'm JEROME
             </span>

@@ -21,3 +21,11 @@
 @mixin shadow($shadowColor: $black) {
     box-shadow: 0.1em 0.1em 0.2em #{$shadowColor};
 }
+
+@function box-shadow($stars) {
+    $bxshadow: ();
+    @for $i from 1 to $stars {
+        $bxshadow: append($bxshadow, (random(2000) + 0px) (random(800) + 0px) #fff, comma);
+    }
+    @return $bxshadow;
+}

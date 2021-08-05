@@ -1,3 +1,5 @@
+@import "variables";
+
 @keyframes shake {
     0% {
         transform: rotate(0deg);
@@ -42,5 +44,57 @@
     100% {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+@keyframes blink-large {
+    0% {
+        box-shadow: $bxshadow-large;
+    }
+    70% {
+        $colors: "#fff", "transparent";
+        $stars: $bxshadow-large;
+        @for $i from 1 to length($stars) {
+            $star: set-nth(nth($stars, $i), 3, unquote(nth($colors, random(length($colors)))));
+            $stars: set-nth($stars, $i, $star);
+        }
+        box-shadow: $stars;
+    }
+    100% {
+        box-shadow: $bxshadow-large;
+    }
+}
+@keyframes blink-medium {
+    0% {
+        box-shadow: $bxshadow-medium;
+    }
+    70% {
+        $colors: "#fff", "transparent";
+        $stars: $bxshadow-medium;
+        @for $i from 1 to length($stars) {
+            $star: set-nth(nth($stars, $i), 3, unquote(nth($colors, random(length($colors)))));
+            $stars: set-nth($stars, $i, $star);
+        }
+        box-shadow: $stars;
+    }
+    100% {
+        box-shadow: $bxshadow-medium;
+    }
+}
+@keyframes blink-small {
+    0% {
+        box-shadow: $bxshadow-small;
+    }
+    70% {
+        $colors: "#fff", "transparent";
+        $stars: $bxshadow-small;
+        @for $i from 1 to length($stars) {
+            $star: set-nth(nth($stars, $i), 3, unquote(nth($colors, random(length($colors)))));
+            $stars: set-nth($stars, $i, $star);
+        }
+        box-shadow: $stars;
+    }
+    100% {
+        box-shadow: $bxshadow-small;
     }
 }
