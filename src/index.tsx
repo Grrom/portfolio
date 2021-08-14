@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import './global_styles/index.scss';
 import App from './components/app';
-import { observer } from './helper';
+import {observer} from './helper';
 
 window.onload! = function () {
   [".skill", ".title", ".skill-category", "span", "p"].forEach((elementQuery) => {
