@@ -28,7 +28,7 @@ export default function Navbar() {
     <main id="navbar">
       <MyLogo />
 
-      <a href="https://hits.seeyoufarm.com" className="display-none"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fjeromelalunio.tech&count_bg=%23007AE6&title_bg=%23555555&icon=linux.svg&icon_color=%23E7E7E7&title=portfolio+views&edge_flat=false" /></a>
+      <a href="https://hits.seeyoufarm.com" className="display-none"><img alt="hits" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fjeromelalunio.tech&count_bg=%23007AE6&title_bg=%23555555&icon=linux.svg&icon_color=%23E7E7E7&title=portfolio+views&edge_flat=false" /></a>
 
       <GiHamburgerMenu className="hamburger-button" onClick={() => toggleSidenav(true)} />
 

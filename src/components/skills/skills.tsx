@@ -23,6 +23,10 @@ import dockerLogo from "../../assets/skills/docker.svg";
 import githubLogo from "../../assets/skills/github.svg";
 import gitLogo from "../../assets/skills/git.svg";
 import nodeJsLogo from "../../assets/skills/nodejs.svg";
+import firebaseLogo from "../../assets/skills/firebase.svg";
+import restLogo from "../../assets/skills/rest.svg";
+import graphqlLogo from "../../assets/skills/graphql.svg";
+
 import { skill } from "../types";
 
 export default function Skills() {
@@ -47,7 +51,8 @@ export default function Skills() {
 
         "Others": [
             { name: "Docker", icon: dockerLogo }, { name: "Github", icon: githubLogo }, { name: "Git", icon: gitLogo },
-            { name: "Node JS", icon: nodeJsLogo }, { name: "SQL", icon: "" }, { name: "NoSQL", icon: "" }
+            { name: "Node JS", icon: nodeJsLogo }, { name: "SQL", icon: "" }, { name: "NoSQL", icon: "" },
+            { name: "Firebase", icon: firebaseLogo }, { name: "REST api", icon: restLogo }, { name: "Graphql", icon: graphqlLogo }
         ]
     }
 
