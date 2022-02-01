@@ -8,6 +8,7 @@ import typescriptLogo from "../../assets/skills/typescript.svg";
 import phpLogo from "../../assets/skills/php.svg";
 import csharp from "../../assets/skills/csharp.svg";
 import shell from "../../assets/skills/shell.svg";
+import lua from "../../assets/skills/lua.svg";
 
 import htmlLogo from "../../assets/skills/html.svg";
 import cssLogo from "../../assets/skills/css.svg";
@@ -41,7 +42,8 @@ export default function Skills() {
       { name: "Typescript", icon: typescriptLogo },
       { name: "Php", icon: phpLogo },
       { name: "C#", icon: csharp },
-      { name: "shell", icon: shell },
+      { name: "Shell", icon: shell },
+      { name: "Lua", icon: lua },
     ],
 
     "Web Dev Specific": [
