@@ -67,8 +67,8 @@ function ContactItem(props: contact) {
       rel="noopener noreferrer"
       className="contact-item"
     >
-      {props.icon}
-      {props.site}
+      <div>{props.icon}</div>
+      <div>{props.site}</div>
     </a>
   );
 }
