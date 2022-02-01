@@ -2,6 +2,7 @@ import "./contact.scss";
 
 import { FaLinkedin, FaGithub, FaGitlab, FaDiscord } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { SiMyanimelist } from "react-icons/si";
 import { contact } from "../types";
 
 export default function Contact() {
@@ -30,6 +31,11 @@ export default function Contact() {
       site: "Discord",
       link: "https://discordapp.com/users/5163",
       icon: <FaDiscord className="contact-icon" />,
+    },
+    {
+      site: "My Anime List",
+      link: "https://myanimelist.net/profile/Grrom",
+      icon: <SiMyanimelist className="contact-icon" />,
     },
   ];
 
