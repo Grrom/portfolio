@@ -17,7 +17,8 @@ export default function FeaturedProjects() {
       name: "Lofi-moods",
       imgSrc: lofiMoods,
       link: "https://jeromelalunio.tech/lofi-moods",
-      description: "An online Lofi player with livechat function.",
+      description:
+        "An online Lofi player sorted by moods with livechat function.",
     },
   ];
 
