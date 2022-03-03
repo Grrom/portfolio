@@ -24,7 +24,7 @@ export default function FeaturedProjects() {
 
   return (
     <main id="featured-projects">
-      <span className="title">Featured Projects</span>
+      <span className="title">Featured Personal Projects</span>
 
       {projectList.map((item) => {
         return (

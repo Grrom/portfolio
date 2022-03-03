@@ -9,7 +9,7 @@ export default function Contact() {
   const contactList: Array<contact> = [
     {
       site: "Github",
-      link: "https://github.com/JeromeLalunio",
+      link: "https://github.com/Grrom",
       icon: <FaGithub className="contact-icon" />,
     },
     {
