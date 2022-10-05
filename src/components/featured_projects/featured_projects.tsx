@@ -9,14 +9,14 @@ export default function FeaturedProjects() {
     {
       name: "My Music Streamer",
       imgSrc: myMusicStreamer,
-      link: "https://jeromelalunio.tech/my-music-streamer",
+      link: "https://grrom.github.io/my-music-streamer",
       description:
         "It's a Music streamer that I made with react, You can search songs and play them, pretty straight forward.",
     },
     {
       name: "Lofi-moods",
       imgSrc: lofiMoods,
-      link: "https://jeromelalunio.tech/lofi-moods",
+      link: "https://grrom.github.io/lofi-moods",
       description:
         "An online Lofi player sorted by moods with livechat function.",
     },
