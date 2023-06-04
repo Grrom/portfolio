@@ -29,6 +29,7 @@ import firebaseLogo from "../../assets/skills/firebase.svg";
 import restLogo from "../../assets/skills/rest.svg";
 import graphqlLogo from "../../assets/skills/graphql.svg";
 import mongodb from "../../assets/skills/mongodb.svg";
+import azureDevops from "../../assets/skills/azureDevops.svg";
 
 import { skill } from "../types";
 
@@ -65,6 +66,7 @@ export default function Skills() {
 
     Others: [
       { name: "Docker", icon: dockerLogo },
+      { name: "Azure Devops", icon: azureDevops },
       { name: "Git", icon: gitLogo },
       { name: "Node JS", icon: nodeJsLogo },
       { name: "SQL", icon: "" },
