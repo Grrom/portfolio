@@ -136,8 +136,9 @@ export default function FeaturedProjects() {
         umed18,
       ],
       description:
-        "A project used to monitor 3d printers in a network and control them remotely.",
-      alt: "PRINTER_MONITORING_IMAGE",
+        "A telemedicine app that allows patients to book appointments with doctors and have video consultations with them. It also has a feature that allows patients to order medicines and have them delivered to their homes or they can pickup their prescribed medications from their local pharmacy.",
+      alt: "UMED_TELEMEDICINE_IMAGE",
+      link: "https://apps.apple.com/jp/app/umed-healthcare/id1586528141?l=en-US",
     },
 
     {
@@ -177,28 +178,41 @@ export default function FeaturedProjects() {
 
   return (
     <main id="featured-projects">
-      <ProjectsWrapper projects={projectsForClients} title="Previous Clients" />
-      <ProjectsWrapper projects={personalProjects} title="Personal Projects" />
+      <ProjectsWrapper
+        projects={projectsForClients}
+        title="Previous Clients"
+        className="mobile-projects-wrapper"
+      />
+      <ProjectsWrapper
+        projects={personalProjects}
+        title="Personal Projects"
+        className="web-projects-wrapper"
+      />
     </main>
   );
 }
 
-function ProjectsWrapper(props: { projects: Array<project>; title: string }) {
+function ProjectsWrapper(props: {
+  projects: Array<project>;
+  title: string;
+  className: string;
+}) {
   return (
     <div>
       <span className="title">{props.title}</span>
-
-      {props.projects.map((item) => {
-        return (
-          <Project
-            name={item.name}
-            imgSrc={item.imgSrc}
-            link={item.link}
-            description={item.description}
-            key={item.name}
-          />
-        );
-      })}
+      <div className={props.className}>
+        {props.projects.map((item) => {
+          return (
+            <Project
+              name={item.name}
+              imgSrc={item.imgSrc}
+              link={item.link}
+              description={item.description}
+              key={item.name}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }

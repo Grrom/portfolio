@@ -7,61 +7,82 @@
 
     @extend .spacing;
 
-    .carousel .thumbs-wrapper {
-        margin: 0 auto !important;
+    .web-projects-wrapper {
+        display: block;
+
+        .project {
+            max-width: 70vw;
+            margin: 1em auto;
+        }
     }
 
-    .project {
-        @extend .rounded-border;
+    .mobile-projects-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-wrap: wrap;
 
-        background-color: $primary;
-        width: 70vw;
-        min-width: 320px;
-        margin: 1em auto;
+        .project {
+            max-width: 350px;
+            margin: 1em;
 
-        .project-screenshot {
-            @extend .rounded-border;
-
-            max-height: 80vh;
-            object-fit: contain;
-            width: 100%;
-        }
-
-        .project-details {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-
-            .project-name {
-                margin: 20px;
-                font-size: 1.4em;
-                font-weight: bold;
-            }
-
-            .project-description {
-                margin: 1em;
+            .project-screenshot {
+                padding: .4em;
             }
         }
+    }
 
-        .project-link {
+    .mobile-projects-wrapper, .web-projects-wrapper {
+        .project {
             @extend .rounded-border;
-            @extend .font-inter;
-            @extend .hover-elevate;
 
-            display: inline-block;
-            width: 90%;
-            padding: 0.6em;
-            margin: 0.4em;
-            margin-bottom: 2em;
-            background-color: $secondary;
-            text-decoration: none;
-            color: $fontColor;
-        }
+            background-color: $primary;
+            min-width: 320px;
 
-        .no-link {
-            @extend .font-inter;
+            .project-screenshot {
+                @extend .rounded-border;
 
-            padding: 1em;
+                max-height: 80vh;
+                object-fit: contain;
+                width: 100%;
+            }
+
+            .project-details {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                .project-name {
+                    margin: 20px;
+                    font-size: 1.4em;
+                    font-weight: bold;
+                }
+
+                .project-description {
+                    margin: 1em;
+                }
+            }
+
+            .project-link {
+                @extend .rounded-border;
+                @extend .font-inter;
+                @extend .hover-elevate;
+
+                display: inline-block;
+                width: 90%;
+                padding: 0.6em;
+                margin: 0.4em;
+                margin-bottom: 2em;
+                background-color: $secondary;
+                text-decoration: none;
+                color: $fontColor;
+            }
+
+            .no-link {
+                @extend .font-inter;
+
+                padding: 1em;
+            }
         }
     }
 }
