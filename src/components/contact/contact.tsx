@@ -14,7 +14,7 @@ export default function Contact() {
     },
     {
       site: "LinkedIn",
-      link: "https://www.linkedin.com/in/jose-jerome-lalunio-1ba2541a6/",
+      link: "https://www.linkedin.com/in/jlalunio/",
       icon: <FaLinkedin className="contact-icon" />,
     },
     {
