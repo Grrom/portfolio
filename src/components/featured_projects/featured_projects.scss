@@ -15,12 +15,15 @@
         @extend .rounded-border;
 
         background-color: $primary;
-        width: 50vw;
+        width: 70vw;
         min-width: 320px;
         margin: 1em auto;
 
         .project-screenshot {
             @extend .rounded-border;
+
+            max-height: 80vh;
+            object-fit: contain;
             width: 100%;
         }
 
@@ -30,7 +33,9 @@
             align-items: center;
 
             .project-name {
-                font-size: 1.2em;
+                margin: 20px;
+                font-size: 1.4em;
+                font-weight: bold;
             }
 
             .project-description {
@@ -45,53 +50,12 @@
 
             display: inline-block;
             width: 90%;
-            padding: 0.4em;
+            padding: 0.6em;
             margin: 0.4em;
             margin-bottom: 2em;
             background-color: $secondary;
             text-decoration: none;
             color: $fontColor;
-        }
-    }
-    .project {
-        @extend .rounded-border;
-
-        background-color: $primary;
-        width: 50vw;
-        min-width: 320px;
-        margin: 1em auto;
-
-        .project-screenshot {
-            @extend .rounded-border;
-            width: 100%;
-        }
-
-        .project-details {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-
-            .project-name {
-                font-size: 1.2em;
-            }
-
-            .project-description {
-                margin: 1em;
-            }
-
-            .project-link {
-                @extend .rounded-border;
-                @extend .font-inter;
-                @extend .hover-elevate;
-
-                display: inline-block;
-                width: 20%;
-                padding: 0.4em;
-                margin: 0.4em;
-                background-color: $secondary;
-                text-decoration: none;
-                color: $fontColor;
-            }
         }
     }
 }
