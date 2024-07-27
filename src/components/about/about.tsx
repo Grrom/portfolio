@@ -11,8 +11,9 @@ export default function About() {
       </p>
       <p>
         I've worked on a number of different projects ranging from websites,
-        apps and APIs. I'm always looking for new opportunities to learn and
-        grow as a developer.
+        apps and APIs providing maintainable and scalable solutions for my
+        clients. I'm always looking for new opportunities to learn and grow as a
+        developer.
       </p>
     </main>
   );

@@ -9,8 +9,9 @@ export interface contact {
 }
 
 export interface project {
+  alt?: string;
   name: string;
-  imgSrc: string;
+  imgSrc: string[];
   link: string;
   description: string;
 }
