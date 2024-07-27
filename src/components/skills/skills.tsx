@@ -9,6 +9,7 @@ import phpLogo from "../../assets/skills/php.svg";
 import csharp from "../../assets/skills/csharp.svg";
 import shell from "../../assets/skills/shell.svg";
 import lua from "../../assets/skills/lua.svg";
+import golang from "../../assets/skills/golang.svg";
 
 import htmlLogo from "../../assets/skills/html.svg";
 import cssLogo from "../../assets/skills/css.svg";
@@ -22,14 +23,15 @@ import bootstrapLogo from "../../assets/skills/bootstrap.svg";
 import tailwindLogo from "../../assets/skills/tailwind.svg";
 import expressLogo from "../../assets/skills/express.svg";
 
+import gcp from "../../assets/skills/gcp.svg";
 import dockerLogo from "../../assets/skills/docker.svg";
 import gitLogo from "../../assets/skills/git.svg";
 import nodeJsLogo from "../../assets/skills/nodejs.svg";
 import firebaseLogo from "../../assets/skills/firebase.svg";
-import restLogo from "../../assets/skills/rest.svg";
 import graphqlLogo from "../../assets/skills/graphql.svg";
 import mongodb from "../../assets/skills/mongodb.svg";
 import azureDevops from "../../assets/skills/azureDevops.svg";
+import fhir from "../../assets/skills/fhir.svg";
 
 import { skill } from "../types";
 
@@ -45,6 +47,7 @@ export default function Skills() {
       { name: "C#", icon: csharp },
       { name: "Shell", icon: shell },
       { name: "Lua", icon: lua },
+      { name: "Golang", icon: golang },
     ],
 
     "Web Dev Specific": [
@@ -65,6 +68,7 @@ export default function Skills() {
     ],
 
     Others: [
+      { name: "Google Cloud Platform", icon: gcp },
       { name: "Docker", icon: dockerLogo },
       { name: "Azure Devops", icon: azureDevops },
       { name: "Git", icon: gitLogo },
@@ -72,9 +76,9 @@ export default function Skills() {
       { name: "SQL", icon: "" },
       { name: "NoSQL", icon: "" },
       { name: "Firebase", icon: firebaseLogo },
-      { name: "REST api", icon: restLogo },
       { name: "Graphql", icon: graphqlLogo },
       { name: "MongoDB", icon: mongodb },
+      { name: "FHIR", icon: fhir },
     ],
   };
 
