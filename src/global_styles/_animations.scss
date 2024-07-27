@@ -5,10 +5,10 @@
         transform: rotate(0deg);
     }
     30% {
-        transform: scale(1.1) rotate(5deg);
+        transform: scale(1.4) rotate(5deg);
     }
     60% {
-        transform: scale(1.1) rotate(-5deg);
+        transform: scale(1.4) rotate(-5deg);
     }
     100% {
         transform: rotate(0deg);
@@ -38,7 +38,7 @@
 
 @keyframes scaleIn {
     0% {
-        opacity: 0.2;
+        opacity: 0.4;
         transform: scale(0.8);
     }
     100% {
@@ -52,7 +52,7 @@
         box-shadow: $bxshadow-large;
     }
     70% {
-        $colors: "#fff", "transparent";
+        $colors: "#111", "transparent";
         $stars: $bxshadow-large;
         @for $i from 1 to length($stars) {
             $star: set-nth(nth($stars, $i), 3, unquote(nth($colors, random(length($colors)))));
@@ -69,7 +69,7 @@
         box-shadow: $bxshadow-medium;
     }
     70% {
-        $colors: "#fff", "transparent";
+        $colors: "#111", "transparent";
         $stars: $bxshadow-medium;
         @for $i from 1 to length($stars) {
             $star: set-nth(nth($stars, $i), 3, unquote(nth($colors, random(length($colors)))));
@@ -86,7 +86,7 @@
         box-shadow: $bxshadow-small;
     }
     70% {
-        $colors: "#fff", "transparent";
+        $colors: "#111", "transparent";
         $stars: $bxshadow-small;
         @for $i from 1 to length($stars) {
             $star: set-nth(nth($stars, $i), 3, unquote(nth($colors, random(length($colors)))));
