@@ -36,6 +36,13 @@ import mrPaws14 from "../../assets/mr_paws/14.png";
 import mrPaws15 from "../../assets/mr_paws/15.png";
 import mrPaws16 from "../../assets/mr_paws/16.png";
 
+import printerMonitoring01 from "../../assets/printer_monitoring/01.png";
+import printerMonitoring02 from "../../assets/printer_monitoring/02.png";
+import printerMonitoring03 from "../../assets/printer_monitoring/03.png";
+import printerMonitoring04 from "../../assets/printer_monitoring/04.png";
+import printerMonitoring05 from "../../assets/printer_monitoring/05.png";
+import printerMonitoring06 from "../../assets/printer_monitoring/06.png";
+
 import { project } from "../types";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -83,7 +90,21 @@ export default function FeaturedProjects() {
       ],
       description:
         "It's a Dating app where users are able to use more advanced customized filters than other dating apps. Users can select from lists of their interests and their moral compass and they can set their non-negotiables and negotiables too.",
-      alt: "BOILING_WATERS_IMAGE",
+      alt: "MR_PAWS_IMAGE",
+    },
+    {
+      name: "3D Printer monitoring",
+      imgSrc: [
+        printerMonitoring01,
+        printerMonitoring02,
+        printerMonitoring03,
+        printerMonitoring04,
+        printerMonitoring05,
+        printerMonitoring06,
+      ],
+      description:
+        "A project used to monitor 3d printers in a network and control them remotely.",
+      alt: "PRINTER_MONITORING_IMAGE",
     },
   ];
 
