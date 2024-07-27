@@ -43,6 +43,26 @@ import printerMonitoring04 from "../../assets/printer_monitoring/04.png";
 import printerMonitoring05 from "../../assets/printer_monitoring/05.png";
 import printerMonitoring06 from "../../assets/printer_monitoring/06.png";
 
+import umed00 from "../../assets/umed/00.png";
+import umed01 from "../../assets/umed/01.png";
+import umed02 from "../../assets/umed/02.png";
+import umed03 from "../../assets/umed/03.png";
+import umed04 from "../../assets/umed/04.png";
+import umed05 from "../../assets/umed/05.png";
+import umed06 from "../../assets/umed/06.png";
+import umed07 from "../../assets/umed/07.png";
+import umed08 from "../../assets/umed/08.png";
+import umed09 from "../../assets/umed/09.png";
+import umed10 from "../../assets/umed/10.png";
+import umed11 from "../../assets/umed/11.png";
+import umed12 from "../../assets/umed/12.png";
+import umed13 from "../../assets/umed/13.png";
+import umed14 from "../../assets/umed/14.png";
+import umed15 from "../../assets/umed/15.png";
+import umed16 from "../../assets/umed/16.png";
+import umed17 from "../../assets/umed/17.png";
+import umed18 from "../../assets/umed/18.png";
+
 import { project } from "../types";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -92,6 +112,34 @@ export default function FeaturedProjects() {
         "It's a Dating app where users are able to use more advanced customized filters than other dating apps. Users can select from lists of their interests and their moral compass and they can set their non-negotiables and negotiables too.",
       alt: "MR_PAWS_IMAGE",
     },
+    {
+      name: "Umed Telemedicine",
+      imgSrc: [
+        umed00,
+        umed01,
+        umed02,
+        umed03,
+        umed04,
+        umed05,
+        umed06,
+        umed07,
+        umed08,
+        umed09,
+        umed10,
+        umed11,
+        umed12,
+        umed13,
+        umed14,
+        umed15,
+        umed16,
+        umed17,
+        umed18,
+      ],
+      description:
+        "A project used to monitor 3d printers in a network and control them remotely.",
+      alt: "PRINTER_MONITORING_IMAGE",
+    },
+
     {
       name: "3D Printer monitoring",
       imgSrc: [
