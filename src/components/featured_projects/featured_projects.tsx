@@ -19,6 +19,23 @@ import boilingWaters10 from "../../assets/boiling_waters/10.png";
 import boilingWaters11 from "../../assets/boiling_waters/11.png";
 import boilingWaters12 from "../../assets/boiling_waters/12.png";
 
+import mrPaws01 from "../../assets/mr_paws/01.png";
+import mrPaws02 from "../../assets/mr_paws/02.png";
+import mrPaws03 from "../../assets/mr_paws/03.png";
+import mrPaws04 from "../../assets/mr_paws/04.png";
+import mrPaws05 from "../../assets/mr_paws/05.png";
+import mrPaws06 from "../../assets/mr_paws/06.png";
+import mrPaws07 from "../../assets/mr_paws/07.png";
+import mrPaws08 from "../../assets/mr_paws/08.png";
+import mrPaws09 from "../../assets/mr_paws/09.png";
+import mrPaws10 from "../../assets/mr_paws/10.png";
+import mrPaws11 from "../../assets/mr_paws/11.png";
+import mrPaws12 from "../../assets/mr_paws/12.png";
+import mrPaws13 from "../../assets/mr_paws/13.png";
+import mrPaws14 from "../../assets/mr_paws/14.png";
+import mrPaws15 from "../../assets/mr_paws/15.png";
+import mrPaws16 from "../../assets/mr_paws/16.png";
+
 import { project } from "../types";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -40,6 +57,30 @@ export default function FeaturedProjects() {
         boilingWaters12,
       ],
       link: "https://play.google.com/store/apps/details?id=ph.boilingwatersph.bdub&hl=en&gl=US",
+      description:
+        "It's a Dating app where users are able to use more advanced customized filters than other dating apps. Users can select from lists of their interests and their moral compass and they can set their non-negotiables and negotiables too.",
+      alt: "BOILING_WATERS_IMAGE",
+    },
+    {
+      name: "Mr. Paws",
+      imgSrc: [
+        mrPaws01,
+        mrPaws02,
+        mrPaws03,
+        mrPaws04,
+        mrPaws05,
+        mrPaws06,
+        mrPaws07,
+        mrPaws08,
+        mrPaws09,
+        mrPaws10,
+        mrPaws11,
+        mrPaws12,
+        mrPaws13,
+        mrPaws14,
+        mrPaws15,
+        mrPaws16,
+      ],
       description:
         "It's a Dating app where users are able to use more advanced customized filters than other dating apps. Users can select from lists of their interests and their moral compass and they can set their non-negotiables and negotiables too.",
       alt: "BOILING_WATERS_IMAGE",
@@ -114,14 +155,18 @@ function Project(props: project) {
           <p className="project-description">{props.description}</p>
         </div>
       </div>
-      <a
-        href={props.link}
-        target="_blank"
-        rel="noreferrer"
-        className="project-link"
-      >
-        Visit
-      </a>
+      {props.link ? (
+        <a
+          href={props.link}
+          target="_blank"
+          rel="noreferrer"
+          className="project-link"
+        >
+          Visit
+        </a>
+      ) : (
+        <div className="no-link">No link available</div>
+      )}
     </div>
   );
 }

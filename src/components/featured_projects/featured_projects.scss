@@ -57,5 +57,11 @@
             text-decoration: none;
             color: $fontColor;
         }
+
+        .no-link {
+            @extend .font-inter;
+
+            padding: 1em;
+        }
     }
 }

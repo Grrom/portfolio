@@ -12,6 +12,6 @@ export interface project {
   alt?: string;
   name: string;
   imgSrc: string[];
-  link: string;
+  link?: string;
   description: string;
 }
