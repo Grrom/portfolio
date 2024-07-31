@@ -109,7 +109,7 @@ export default function FeaturedProjects() {
         mrPaws16,
       ],
       description:
-        "It's a Dating app where users are able to use more advanced customized filters than other dating apps. Users can select from lists of their interests and their moral compass and they can set their non-negotiables and negotiables too.",
+        "It's a grooming service booking app where customers can book grooming services, playcation and staycations for their pets. The app also has a feature that allows customers to track their pets' grooming progress.",
       alt: "MR_PAWS_IMAGE",
     },
     {
